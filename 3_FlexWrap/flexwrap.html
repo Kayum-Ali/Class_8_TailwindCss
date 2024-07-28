@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Wrap</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <h2 class="text-3xl my-10 text-center">Flex Wrap</h2>
+      <div
+        class="flex w-[800px] flex-row flex-nowrap overflow-x-auto *:bg-[#0EA5E9] gap-5 *:p-6 bg-gray-500 p-10 *:w-3/4"
+      >
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+        <div>04</div>
+        <div>05</div>
+        <div>06</div>
+        <div>07</div>
+        <div>08</div>
+        <div>09</div>
+        <div>10</div>
+        <div>Flex No Wrap</div>
+      </div>
+
+      <div
+        class="flex flex-row flex-wrap overflow-x-auto *:bg-[#0EA5E9] gap-5 *:p-6 bg-gray-500 p-10 *:w-1/5 my-10"
+      >
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+        <div>04</div>
+        <div>05</div>
+        <div>06</div>
+        <div>07</div>
+        <div>08</div>
+        <div>09</div>
+        <div>10</div>
+        <div>Flex Wrap</div>
+      </div>
+
+      <div
+        class="flex flex-row flex-wrap-reverse overflow-x-auto *:bg-[#0ed7e9] gap-5 *:p-6 bg-gray-500 p-10 *:w-1/5 my-10"
+      >
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+        <div>04</div>
+        <div>05</div>
+        <div>06</div>
+        <div>07</div>
+        <div>08</div>
+        <div>09</div>
+        <div>10</div>
+        <div>Flex Wrap reverse</div>
+      </div>
+    </div>
+  </body>
+</html>
