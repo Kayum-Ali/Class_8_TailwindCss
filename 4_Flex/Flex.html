@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Wrap</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <h2 class="text-3xl my-10 text-center">
+        shrink but not grow, taking into account its initial size
+      </h2>
+
+      <div class="flex flex-row *:bg-[#0EA5E9] gap-5 *:p-6 bg-lime-600 p-10">
+        <div class="w-24">flex-none/w-24</div>
+        <div class="flex-initial w-64">flex-initial/w-64</div>
+        <div class="flex-initial w-32">flex-initial/w-32</div>
+      </div>
+
+      <h2 class="text-3xl my-10 text-center">
+        grow and shrink as needed, ignoring its initial size:
+      </h2>
+
+      <div
+        class="flex flex-row *:bg-[#EC4899] gap-5 *:p-6 bg-lime-600 p-10 my-10"
+      >
+        <div class="w-24">flex-none/w-24</div>
+        <div class="flex-1 w-64">flex-1 w-64</div>
+        <div class="flex-1 w-32">flex-1 w-32</div>
+      </div>
+
+      <h2 class="text-3xl my-10 text-center">
+        grow and shrink, taking into account its initial size:
+      </h2>
+
+      <div
+        class="flex flex-row *:bg-[#EC4899] gap-5 *:p-6 bg-lime-600 p-10 my-10"
+      >
+        <div class="w-24">flex-none/w-24</div>
+        <div class="flex-auto w-64">flex-auto w-64</div>
+        <div class="flex-auto w-32">flex-auto w-32</div>
+      </div>
+      <h2 class="text-3xl my-10 text-center">
+        grow and shrink, taking into account its initial size:
+      </h2>
+
+      <div
+        class="flex flex-row *:bg-[#EC4899] gap-5 *:p-6 bg-lime-600 p-10 my-10"
+      >
+        <div class="flex-none w-24">flex-none/w-24</div>
+        <div class="flex-none w-32">flex-none w-32</div>
+        <div class="flex-1">flex-1</div>
+      </div>
+    </div>
+  </body>
+</html>
