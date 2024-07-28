@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Basis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <h1 class="text-center text-3xl my-10">Flex Basis</h1>
+    <div
+      class="container mx-auto flex flex-row *:bg-[#D946EF] *:h-[30vh] *:text-white gap-5 *:flex *:justify-center *:items-center"
+    >
+      <div class="basis-1/4">basis-1/4 or 25%</div>
+      <div class="basis-1/4">basis-1/4 or 25%</div>
+      <div class="basis-1/2">basis-1/2 or 50%</div>
+    </div>
+
+    <div
+      class="*:bg-[#46ef70] *:h-[30vh] *:text-white gap-5 my-6 flex *:flex *:justify-center *:items-center container mx-auto *:font-bold"
+    >
+      <div class="basis-1/2">basis-1/2 or 50%</div>
+      <div class="basis-1/2">basis-1/2 or 50%</div>
+    </div>
+
+    <div
+      class="*:bg-[#ef46a9] *:h-[30vh] *:text-white gap-5 my-6 flex *:flex *:justify-center *:items-center container mx-auto *:font-bold"
+    >
+      <div class="basis-3/12">basis-3/12 or 25%</div>
+      <div class="basis-9/12">basis-9/12 or 75%</div>
+    </div>
+
+    <div
+      class="*:bg-[#4684ef] *:h-[30vh] *:text-white gap-5 my-6 flex *:flex *:justify-center *:items-center container mx-auto *:font-bold"
+    >
+      <div class="basis-4/5">basis-4/5 or 80%</div>
+      <div class="basis-1/5">basis-1/5 or 20%</div>
+    </div>
+  </body>
+</html>
